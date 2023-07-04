@@ -18,6 +18,7 @@
 #include "storage/buf.h"
 #include "storage/bufpage.h"
 #include "storage/relfilelocator.h"
+#include "storage/ptedit_header.h"
 #include "utils/relcache.h"
 #include "utils/snapmgr.h"
 
