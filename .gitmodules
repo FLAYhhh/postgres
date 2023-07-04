@@ -1,0 +1,6 @@
+[submodule "src/thirdparty/PTEditor"]
+	path = src/thirdparty/PTEditor
+	url = git@github.com:FLAYhhh/PTEditor.git
+[submodule "src/thirdparty/on-demand-fork"]
+	path = src/thirdparty/on-demand-fork
+	url = git@github.com:FLAYhhh/on-demand-fork.git
