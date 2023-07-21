@@ -485,7 +485,13 @@ StrategyInitialize(bool init)
 	 * happening in each partition concurrently, so we could need as many as
 	 * NBuffers + NUM_BUFFER_PARTITIONS entries.
 	 */
-	InitBufTable(NBuffers + NUM_BUFFER_PARTITIONS);
+	//InitBufTable(NBuffers + NUM_BUFFER_PARTITIONS);
+    /*
+     * PTBM: we don't need BufTable anymore
+     * Instead, we need a Hash Table mapping <relation, forknum> to
+     * <mmap starting address>
+     */
+    InitMappingRangeTable();
 
 	/*
 	 * Get or create the shared strategy control block

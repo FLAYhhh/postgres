@@ -521,7 +521,7 @@ typedef struct {
  */
 #pragma pack(push,1)
 typedef struct {
-    size_t present : 1; // 
+    size_t present : 1; //
     size_t writeable : 1;
     size_t user_access : 1;
     size_t write_through : 1;

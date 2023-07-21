@@ -15,12 +15,15 @@
 #define BUF_H
 
 /*
+ * PTBM: should redefine this type to virtual address of page buffer
+ *       this vitual address must have valid mapping if the page is pinned
  * Buffer identifiers.
  *
  * Zero is invalid, positive is the index of a shared buffer (1..NBuffers),
  * negative is the index of a local buffer (-1 .. -NLocBuffer).
  */
-typedef int Buffer;
+typedef void *Buffer;
+//typedef int Buffer;
 
 #define InvalidBuffer	0
 
